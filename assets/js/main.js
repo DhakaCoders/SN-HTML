@@ -25,7 +25,15 @@ var windowWidth = $(window).width();
 // https://stackoverflow.com/questions/38686650/slick-slides-on-pagination-hover
 
 
+$('.search-form-btn').on('click', function(){
+    $('.search-form-wrp').fadeIn(500);
+    $('.search-form-wrp').addClass('search-expend');
+  });
 
+  $('.close-btn').on('click', function(){
+    $('.search-form-wrp').fadeOut(500);
+    $('.search-form-wrp').removeClass('search-expend');
+  });
 
 
 /**
