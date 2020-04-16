@@ -35,16 +35,14 @@ $('.search-form-btn').on('click', function(){
     $('.search-form-wrp').removeClass('search-expend');
   });
 
-
-
-if( $('.masonry').length ){
-  $('.masonry').packery({
+if( $('.grid').length ){
+  $('.grid').packery({
     // options
-    itemSelector: '.masonry-item',
+    itemSelector: '.grid-item',
+    //gutter: 20
   });
 
 }
-
 
 
 /**
