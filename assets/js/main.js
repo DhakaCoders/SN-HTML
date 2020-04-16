@@ -36,11 +36,15 @@ $('.search-form-btn').on('click', function(){
   });
 
 
-$('.grid').packery({
-  // options
-  itemSelector: '.grid-item',
-  gutter: 20
-});
+
+if( $('.masonry').length ){
+  $('.masonry').packery({
+    // options
+    itemSelector: '.masonry-item',
+  });
+
+}
+
 
 
 /**

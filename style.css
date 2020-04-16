@@ -712,13 +712,13 @@ Selects
 }
 .sn-reviews-dsc-inr > ul{
 	list-style: none;
-	margin: 0;
+	margin: 0 ;
 	padding: 0;
 }
 .sn-reviews-dsc-inr > ul > li{
 	padding: 0 5px 10px;
 	width: 50%;
-	float: left;
+	/*float: left;*/
 }
 .sn-reviews-dsc ul{
 	float: none;
