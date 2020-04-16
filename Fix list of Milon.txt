@@ -1,0 +1,50 @@
+Desktop
+----------------------
+1. https://www.screencast.com/t/dQLDJ1yMOy
+	font ta fata fata mone hosche, smooth na
+
+2. https://prnt.sc/s0lql8
+	i) hover korle border ta aktive thakena
+	ii) sub menu ber hole 
+		transform: scale3d(1,0,1); ai effect ta daw
+
+3. https://www.screencast.com/t/mK5R5YEWUV
+	aigulo size and postion ta mileni
+
+4. https://www.screencast.com/t/spaCy6kmb
+	search area ta badhe j kono jaygay click korle close hoye jabe ata
+
+5. https://www.screencast.com/t/vSov5Glz
+	i) cursor pointer hobe
+	ii) icon ta r aktu boro hobe
+
+6. https://www.screencast.com/t/jRZs7SLiteaK
+	img tag a hobe
+
+7. https://www.screencast.com/t/3v2xoD238Eqx
+	font-size r aktu boro hobe
+
+8. https://www.screencast.com/t/q9qeRRzTGR
+	ak line a hobe
+
+9. https://www.screencast.com/t/1dk4uU8NK
+	3 ta img ai img tag a hobe
+
+10. https://www.screencast.com/t/iXaJVyieBl7
+	ai gap ta r aktu besi hobe
+
+11. https://www.screencast.com/t/KSojGAgZRQO
+	ai text ta bold hobena
+
+12. https://www.screencast.com/t/w7RwGGydul
+	aigulo color hobe 
+	i) #000
+	ii) #494949
+
+13. https://www.screencast.com/t/O415Ae0C
+	font-weight ta light hobe maybe, r font size kom hobe
+
+14. https://www.screencast.com/t/ujUDdMOv
+	font-weight and color mileni
+
+15.  N.B.---> sob text gulo ami check korini, text gulo aktu valo kore check kore nio j thik thak 				ache kina.
