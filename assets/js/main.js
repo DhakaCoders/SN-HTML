@@ -36,6 +36,13 @@ $('.search-form-btn').on('click', function(){
   });
 
 
+$('.grid').packery({
+  // options
+  itemSelector: '.grid-item',
+  gutter: 20
+});
+
+
 /**
 Slick slider
 */
