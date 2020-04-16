@@ -34,6 +34,9 @@ $('.search-form-btn').on('click', function(){
     $('.search-form-wrp').fadeOut(500);
     $('.search-form-wrp').removeClass('search-expend');
   });
+
+
+  
 if (windowWidth > 480) {
   if( $('.grid').length ){
     $('.grid').packery({
