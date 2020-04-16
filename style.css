@@ -924,18 +924,23 @@ Selects
 	    padding: 20px 0 15px;
 	}
 	.xs-menu-btn-bar{
-		width: 33.3333%;
+		width: 25%;
 		float: left;
-		padding-top: 30px;
+		padding-top: 25px;
 	}
 	.hdr-btm-lft{
-		width: 33.3333%;
+		width: 50%;
 		float: left;
 	}
 	.hdr-btm-rgt {
-	    width: 33.3333%;
+	    width: 25%;
 	    float: right;
-	    padding-top: 28px;
+	    padding-top: 25px;
+	}
+	.logo{
+	    max-width: 200px;
+	    width: 100%;
+	    margin: 0 auto;
 	}
 	/*------ responsive nav ----*/
 	.nav-opener {
