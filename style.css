@@ -778,6 +778,8 @@ Selects
 .sn-read-more-btn{
 	text-align: center;
 	padding-top: 35px;
+	position: relative;
+	z-index: 20;
 }
 .sn-read-more-btn a{
 	display: inline-block;
