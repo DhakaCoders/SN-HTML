@@ -39,14 +39,49 @@ $('.search-form-btn').on('click', function(){
   
 if (windowWidth > 480) {
   if( $('.grid').length ){
-    $('.grid').packery({
-      // options
+    var $grid = $('.grid').packery({
       itemSelector: '.grid-item',
       //gutter: 20
     });
+    var j = 0;
+    var l = 0;
+    var int = 2;
+    var tli = $('.loadMore .lmitem').length;
+    var $items, $item1, $item2, $item3;
+    $('.load-more').on( 'click', function(e) {
+      e.preventDefault();
+      $('.loadMore .lmitem').each(function(i){
+        l++;
+        if( $('.loadMore .lmitem:nth-child('+l+')').length ){
+          $item = $('.loadMore .lmitem:nth-child('+l+')').html();
+          $items = $($items).add($item);
+        }else{
+          $('.load-more').fadeOut();
+        }
+        if( l > int || l == int ) { int += 2; return false; }
+      });
+      if( tli == l || tli < l ){
+        $('.load-more').fadeOut();
+      }
+      // append elements to container
+      $grid.append( $items ).packery( 'appended', $items );
+      $items = '';
+    });
 
   }
+
 }
+
+/*if( $('.masonry').length ){
+  $('.masonry').masonry({
+    item:'.masonry-item',
+    count: 10,
+    itemsToLoad: 5,
+    //cssClass:'load-more',
+    btnHTML:'<div class="sn-read-more-btn"><a class="load-more" href="#">Show more reviews</a></div>'
+  });
+}
+*/
 
 
  /*
@@ -88,49 +123,5 @@ if (windowWidth <= 767) {
       });
   }
 }
-
-
-/**
-Slick slider
-*/
-if( $('.responsive-slider').length ){
-    $('.responsive-slider').slick({
-      dots: true,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-}
-
-    new WOW().init();
 
 })(jQuery);
