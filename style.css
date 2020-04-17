@@ -916,12 +916,13 @@ Selects
 }
 .ftr-col-rgt-cart ul li{
 	float: left;
-	font-size: 30px;
+	font-size: 40px;
 	line-height: 30px;
 	color: rgb(28, 29, 29);
-	padding: 0 10px;
+	padding: 0 7px;
 }
 .ftr-col-rgt-cart ul li i{
+	vertical-align: middle;
 }
 
 /*----- max-width 1199px -----*/
