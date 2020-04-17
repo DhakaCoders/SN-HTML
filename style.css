@@ -1307,6 +1307,9 @@ Selects
 		vertical-align: baseline;
 		float: none;
 	}
+	.sn-product-dsl-lft-img{
+		height: 405px!important;
+	}
 }
 
 
