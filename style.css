@@ -5,7 +5,18 @@ body{
 	font-weight: 400;
 	font-family: 'Arapey', serif;
 }
-
+a,input,img,textarea,button,
+.sn-reviews-bar-clr{
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+a:focus,button:focus,input:focus,textarea:focus{
+	outline: none;
+}
+a:hover{
+	text-decoration: none;
+}
 img{
 	max-width: 100%;
 	width: 100%;
@@ -207,7 +218,6 @@ nav.main-nav li.menu-item-has-children > ul.sub-menu{
 	transition: all .5s;
 	-ms-transition: all .5s;
 	-webkit-transition: all .5s;
-	visibility: hidden;
 	opacity: 0;
 	box-shadow: 0px 10px 20px rgba(0,0,0,0.09);	
 	-ms-box-shadow: 0px 10px 20px rgba(0,0,0,0.09);
@@ -232,9 +242,8 @@ nav.main-nav li.menu-item-has-children ul.sub-menu a{
 	font-weight: 400;
 }
 nav.main-nav li.menu-item-has-children:hover > ul.sub-menu{
-	visibility: visible;
 	opacity: 1;
-	z-index: 9;
+	z-index: 100;
 	-ms-transform: scale3d(1,1,1);
 	-webkit-transform: scale3d(1,1,1);
 	transform: scale3d(1,1,1);
@@ -474,8 +483,7 @@ sn-product-dsl-sec-wrp
 	padding-bottom: 15px;
 }
 .sn-single-op-radio-inr{
-	max-width: 160px;
-	width: 100%;
+	display: table;
 	margin: 0 auto;
 }
 .sn-single-op-radio{
@@ -644,10 +652,17 @@ Selects
 	font-size: 14px;
 	line-height: 16px;
 }
+.sn-reviews-dsc ul li a{
+	font-size: 12px;
+}
 .sn-reviews-dsc ul li a,
 .sn-rating-reviews ul li a{
-	color: #1c1d1d;
+	color: #000;
 	text-decoration: none;
+}
+.sn-rating-reviews ul li a{
+	color: #282828;
+	font-size: 18px;
 }
 .sn-rating-reviews span{
 	display: inline-block;
@@ -655,7 +670,7 @@ Selects
 	font-size: 16px;
 	line-height: 18px;
 	font-family: 'Poppins', sans-serif;
-	font-weight: 500;
+	font-weight: 300;
 	padding-left: 10px;
 }
 .sn-reviews-rgt{
@@ -721,12 +736,12 @@ Selects
 .sn-reviews-dsc-inr{
 	padding-top: 10px;
 }
-.sn-reviews-dsc-inr > ul{
+.masonry{
 	list-style: none;
 	margin: 0 ;
 	padding: 0;
 }
-.sn-reviews-dsc-inr > ul > li{
+.masonry-item{
 	padding: 0 5px 10px;
 	width: 50%;
 	/*float: left;*/
@@ -1330,7 +1345,7 @@ Selects
 	.sn-product-single-img {
 	    height: 380px !important;
 	}
-	.sn-reviews-dsc-inr > ul > li {
+	.masonry-item{
 	    width: 100%;
 	}
 }
@@ -1340,3 +1355,4 @@ Selects
 @media(max-width: 359px){
 
 }
+

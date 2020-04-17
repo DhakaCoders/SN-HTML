@@ -48,6 +48,17 @@ if (windowWidth > 480) {
   }
 }
 
+if( $('.masonry').length ){
+  $('.masonry').simpleLoadMore({
+    item:'.masonry-item',
+    count: 10,
+    itemsToLoad: 5,
+    //cssClass:'load-more',
+    btnHTML:'<div class="sn-read-more-btn grid-item"><a class="load-more" href="#">Show more reviews</a></div>'
+  });
+}
+
+
 
  /*
 ---------------------------
