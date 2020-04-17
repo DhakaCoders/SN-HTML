@@ -1300,9 +1300,12 @@ Selects
 	}
 	.ftr-col-rgt-cart ul {
 	    float: none;
-	    text-align: center;
-	    display: table;
-	    margin: 0 auto;
+	   text-align: center;
+	}
+	.ftr-col-rgt-cart ul li{
+		display: inline-block;
+		vertical-align: baseline;
+		float: none;
 	}
 }
 
