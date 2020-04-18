@@ -45,7 +45,7 @@ if (windowWidth > 480) {
     });
     var j = 0;
     var l = 0;
-    var int = 2;
+    var int = 5;
     var tli = $('.loadMore .lmitem').length;
     var $items, $item1, $item2, $item3;
     $('.load-more').on( 'click', function(e) {
@@ -58,7 +58,7 @@ if (windowWidth > 480) {
         }else{
           $('.load-more').fadeOut();
         }
-        if( l > int || l == int ) { int += 2; return false; }
+        if( l > int || l == int ) { int += 5; return false; }
       });
       if( tli == l || tli < l ){
         $('.load-more').fadeOut();

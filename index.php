@@ -1,3 +1,7 @@
+<?php 
+include('function.php');
+$current_location  = get_current_location();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 	<title>To My Daughter Heart Necklace &ndash; Shopping Namara</title>
-  <link rel='icon' type='image/png' href='favicon.webp'></link>
+  <link rel='icon' type='image/png' href='favicon.ico'></link>
   <meta name="robots" content="noindex,nofollow">
   <meta name="robots" content="noindex">
   <meta name="robots" content="nofollow">
@@ -16,11 +20,25 @@
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">  
   <link href="https://fonts.googleapis.com/css2?family=Arapey&family=Lato&family=Montserrat:wght@300;400;700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
 <body>
 <header class="header">
   <div class="hdr-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="hdr-top-inr">
+           <span class="flag_img">
+            <img src="https://www.countryflags.io/<?php echo $current_location['countryCode'] ?>/flat/24.png" class="lazy" data-src="https://www.countryflags.io/<?php echo $current_location['countryCode'] ?>/flat/24.png">
+          </span>   
+          <span class="flag_city"><?php echo $current_location['city'] ?></span>  
+          <span class="header-headline">- 70% OFF EXPIRES TODAY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hdr-top" style="display: none;">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -135,16 +153,16 @@
         <div class="col-sm-12 paddingNO">
           <div class="sn-product-single-lft SnProductSlider">
             <div class="sn-product-single-img">
-              <img class="lazy" data-src="assets/images/sn-product-dsl-lft-img.jpg">
+              <img src="assets/images/sn-product-dsl-lft-img.jpg">
             </div>
             <div class="sn-product-single-img">
-              <img class="lazy" data-src="assets/images/sn-product-single-img-1.jpg">
+              <img src="assets/images/sn-product-single-img-1.jpg">
             </div>
             <div class="sn-product-single-img">
-              <img class="lazy" data-src="assets/images/sn-product-single-img-2.jpg">
+              <img src="assets/images/sn-product-single-img-2.jpg">
             </div>
             <div class="sn-product-single-img">
-              <img class="lazy" data-src="assets/images/sn-product-single-img-3.jpg">
+              <img src="assets/images/sn-product-single-img-3.jpg">
             </div>
           </div>
         </div>
@@ -896,8 +914,6 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/slick.slider/slick.js"></script>
 <script src="assets/js/packery.pkgd.min.js"></script>
-<script src="assets/js/jquery.simpleLoadMore.min.js"></script>
-<script src="assets/js/loadMoreResults.js"></script>
 <script src="assets/js/lazyload.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script type="text/javascript">window.onload = function() {var newd1 = new LazyLoad({elements_selector: ".lazy"});}</script>

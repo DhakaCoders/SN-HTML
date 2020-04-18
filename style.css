@@ -111,7 +111,7 @@ h5{
 }
 .hdr-top-inr span{
 	display: inline-block;
-	vertical-align: baseline;
+	vertical-align: top;
 	font-size: 20px;
 	line-height: 22px;
 	color: #fff;
@@ -266,11 +266,10 @@ nav.main-nav li:not(.menu-item-has-children) a:hover {
     display: inline-block;
     vertical-align: baseline;
     padding-left: 5px;
-    font-size: 19px;
+    font-size: 21px;
     line-height: 21px;
     color: rgb(28, 29, 29);
 }
-
 .search-bar {
 	position: relative;
 }
@@ -284,7 +283,7 @@ nav.main-nav li:not(.menu-item-has-children) a:hover {
     margin-top: -1px;
 }
 .search-form-btn i{
-	font-size: 19px;
+	font-size: 17px;
 	color: rgb(28, 29, 29);
 	font-weight: 600;
 }
@@ -1010,10 +1009,10 @@ Selects
 		width: 100%;
 	}
 	.nav-opener-btn span:nth-child(2) {
-		top: 6px;
+		top: 7px;
 	}
 	.nav-opener-btn span:nth-child(3) {
-		top: 12px;
+		top: 14px;
 	}
 
 	.xs-popup-main-nav  ul{
