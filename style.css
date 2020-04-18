@@ -1070,6 +1070,7 @@ Selects
 	    background-size: 15px 15px;
 	    width: 15px;
 	    height: 15px;
+	    top: 5px;
 	}
 	.xs-popup-main-nav li.menu-item-has-children > a.sub-menu-expend:before{
 		content: '';
