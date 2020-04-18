@@ -115,7 +115,7 @@ h5{
 	font-size: 20px;
 	line-height: 22px;
 	color: #fff;
-	font-family: 'LatoRegular';
+	font-family: 'Lato';
 	text-align: center;
 }
 .hdr-top-inr span b{
@@ -1284,9 +1284,6 @@ Selects
 	}
 
 }
-
-
-/*----- max-width 575 -----*/
 @media(max-width: 575px){
 	.sn-product-dsl-title {
 	    font-size: 28px;
@@ -1323,10 +1320,6 @@ Selects
 		height: 405px!important;
 	}
 }
-
-
-
-/*----- max-width 439 -----*/
 @media(max-width: 479px){
 	.hdr-top-inr span {
 	    font-size: 17px;
@@ -1366,10 +1359,38 @@ Selects
 	    width: 100%;
 	}
 }
+@media(max-width: 1199px){
+	.hide-lg{
+		display: none!important;
+	}
+	.show-lg{
+		display: block!important;
+	}
 
-
-/*----- max-width 369 -----*/
-@media(max-width: 359px){
+}
+@media(max-width: 991px){
+	.hide-md{
+		display: none!important;
+	}
+	.show-md{
+		display: block!important;
+	}
+}
+@media(max-width: 767px){
+	.hide-sm{
+		display: none!important;
+	}
+	.show-sm{
+		display: block!important;
+	}
+}
+@media(max-width: 575px){
+	.hide-xs{
+		display: none!important;
+	}
+	.show-xs{
+		display: block!important;
+	}
 
 }
 
