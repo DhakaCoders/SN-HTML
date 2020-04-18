@@ -120,6 +120,7 @@ if (windowWidth <= 767) {
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
+        adaptiveHeight: true
       });
   }
 }
