@@ -48,7 +48,7 @@
             <div class="hdr-btm-lft">
               <div class="logo">
                 <a href="#">
-                  <img src="assets/images/logo.png">
+                  <img class="lazy" data-src="assets/images/logo.png">
                 </a>
               </div>
             </div>
@@ -135,16 +135,16 @@
         <div class="col-sm-12 paddingNO">
           <div class="sn-product-single-lft SnProductSlider">
             <div class="sn-product-single-img">
-              <img src="assets/images/sn-product-dsl-lft-img.jpg">
+              <img class="lazy" data-src="assets/images/sn-product-dsl-lft-img.jpg">
             </div>
             <div class="sn-product-single-img">
-              <img src="assets/images/sn-product-single-img-1.jpg">
+              <img class="lazy" data-src="assets/images/sn-product-single-img-1.jpg">
             </div>
             <div class="sn-product-single-img">
-              <img src="assets/images/sn-product-single-img-2.jpg">
+              <img class="lazy" data-src="assets/images/sn-product-single-img-2.jpg">
             </div>
             <div class="sn-product-single-img">
-              <img src="assets/images/sn-product-single-img-3.jpg">
+              <img class="lazy" data-src="assets/images/sn-product-single-img-3.jpg">
             </div>
           </div>
         </div>
@@ -216,16 +216,16 @@
       <div class="col-sm-12">
         <div class="sn-product-single-wrp clearfix">
           <div class="hide-776 sn-product-single-lft">
-            <div class="sn-product-single-img" style="background:url(assets/images/sn-product-single-img-1.jpg); height: 480px;">
+            <div class="sn-product-single-img lazy" data-src="assets/images/sn-product-single-img-1.jpg" style="height: 480px;">
             </div>
-            <div class="sn-product-single-img" style="background:url(assets/images/sn-product-single-img-2.jpg); height: 550px;">
+            <div class="sn-product-single-img lazy" data-src="assets/images/sn-product-single-img-2.jpg" style="height: 550px;">
             </div>
-            <div class="sn-product-single-img" style="background:url(assets/images/sn-product-single-img-3.jpg); height: 550px;">
+            <div class="sn-product-single-img lazy" data-src="assets/images/sn-product-single-img-3.jpg" style="height: 550px;">
             </div>
           </div>
           <div class="sn-product-single-rgt">
             <div class="product-cart">
-              <img src="assets/images/product-cart.jpg">
+              <img class="lazy" data-src="assets/images/product-cart.jpg">
             </div>
             <div class="sn-product-single-tp-dsc">
               <p>Want to surprise your affectionate and generous daughter? What’s the most beautiful gift to give her? Make your loving daughter smile, filled with joy and excitement with this To My Daughter Love Mom Heart Necklace! A glamorous necklace that inevitably brings delight to your child’s face.</p>
@@ -251,7 +251,7 @@
               <strong> Online-exclusive: not available in stores! <br> Extremely high demand: Please allow 2-3 weeks for delivery.</strong>
             </div>
             <div class="product-cart-btm">
-              <img src="assets/images/product-cart-2.jpg">
+              <img class="lazy" data-src="assets/images/product-cart-2.jpg">
             </div>
             <div class="sn-reviews-dsc-wrp">
               <div class="sn-rating-reviews-inr clearfix">
@@ -896,7 +896,10 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/slick.slider/slick.js"></script>
 <script src="assets/js/packery.pkgd.min.js"></script>
+<script src="assets/js/jquery.simpleLoadMore.min.js"></script>
+<script src="assets/js/loadMoreResults.js"></script>
+<script src="assets/js/lazyload.min.js"></script>
 <script src="assets/js/main.js"></script>
-
+<script type="text/javascript">window.onload = function() {var newd1 = new LazyLoad({elements_selector: ".lazy"});}</script>
 </body>
 </html>
