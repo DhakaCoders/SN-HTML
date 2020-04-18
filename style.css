@@ -359,7 +359,7 @@ input[type="text"].search{
 	top: 0;
 }
 .search-btn:hover{
-	background-color: #be1e2d;
+	background-color: #f8f3f3;
 }
 
 /*
@@ -1079,6 +1079,7 @@ Selects
 	    background-size: 15px 15px;
 	    width: 15px;
 	    height: 15px;
+	    top: 5px;
 	}
 	.xs-popup-main-nav li.menu-item-has-children > a.sub-menu-expend:before{
 		content: '';
