@@ -100,7 +100,7 @@ h5{
 .hdr-top{
 	background:rgb(77, 68, 68);
 	padding: 12px 0;
-	position: fixed;
+	position: static;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -123,7 +123,7 @@ h5{
 	color: rgb(255, 194, 41); 
 }
 .hdr-btm{
-	padding-top: 50px;
+	padding-top: 0;
 }
 .hdr-btm-inr{
 	padding: 15px 0;
@@ -926,7 +926,80 @@ Selects
 .ftr-col-rgt-cart ul li i{
 	vertical-align: middle;
 }
+nav.main-nav,
+.search-form-btn,
+.sn-product-select-wrp .sn-product-select{
+	display: none!important;
+}
 
+/* page css*/
+.sn-block-650{
+	max-width: 650px;
+	width: 100%;
+	margin: 0 auto;
+}
+.sn-page-sec-entry-hdr{
+	text-align: center;
+	padding-bottom: 50px;
+}
+.sn-page-sec-entry-hdr h1{
+	position: relative;
+	margin: 0 0 20px 0;
+	padding-bottom: 20px;
+}
+.sn-page-sec-entry-hdr h1:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	height: 1px;
+	width: 50px;
+	background: #1c1d1d;
+}
+
+.sn-text-module-center-title h2{
+	text-align: center;
+	margin: 70px 0 40px;
+	font-size: 20px; 
+	font-family: "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
+}
+.sn-text-module-center-title p strong{
+	display: block;
+}
+.sn-text-module-center-title p,
+.sn-text-module-left-title p{
+	margin-bottom: 25px;
+}
+
+.sn-text-module-center-title ul{
+	padding: 0;
+	margin: 0 0 20px 20px;
+}
+.sn-page-cntlr{
+	padding-bottom: 150px;
+	padding-top: 80px;
+}
+
+.sn-text-module-left-title h5{
+	margin: 40px 0 30px 0;
+	font-size: 16px;
+}
+
+.sn-sec-subtitle strong{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: underline;
+	font-size: 16px;
+	line-height: 1;
+	padding-bottom: 40px;
+}
+.sn-sec-subtitle span{
+	display: block;
+	margin-bottom: 40px;
+}
 /*----- max-width 1199px -----*/
 @media(max-width: 1199px){
 	.sn-product-dsl-dsc {
